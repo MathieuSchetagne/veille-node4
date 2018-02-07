@@ -29,7 +29,7 @@ console.log('la route /traiter_get')
  courriel:req.query.courriel,
  };
 console.log(reponse);
- res.end(JSON.stringify(reponse));
+ res.end('<a title="Voir les membres" href="http://127.0.0.1:8081/membres"> Voir les membres</a>');
 
  fs.readFile('membres.json', "utf8", (err,data) => {
     if (err) throw err;
@@ -83,6 +83,7 @@ app.get("/membres", (req,res) => {
        html += "</table>";
        html += "</html>";
        res.end(html);
+
        });
     
       
