@@ -54,6 +54,35 @@ app.get("/membres", (req,res) => {
        let membres = JSON.parse(data);
        console.log(membres[1].nom);
 
+
+       
+       let html = "<html>";
+       html += "<head>";
+       html += "<style> td{border : 1px solid black;}";
+       html += "</style>";
+       html += "</head>";
+       html += "<table>";
+       for(let nom in membres )   {
+           html += "<tr>";
+           html += "<td>";
+           html += membres[nom].prenom;
+           html += "</td>";
+           html += "<td>";
+           html += membres[nom].nom;
+           html += "</td>";
+           html += "<td>";
+           html += membres[nom].telephone;
+           html += "</td>";
+           html += "<td>";
+           html += membres[nom].courriel;
+           html += "</td>";
+           html += "</tr>";
+       }
+      
+      
+       html += "</table>";
+       html += "</html>";
+       res.end(html);
        });
     
       
