@@ -1,0 +1,30 @@
+{
+  "name": "veille-node4",
+  "version": "1.0.0",
+  "description": "Exercice 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathieuSchetagne/veille-node4.git"
+  },
+  "keywords": [
+    "express",
+    "for",
+    "of",
+    "for",
+    "in",
+    "formulaire"
+  ],
+  "author": "Mathieu Schetagne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathieuSchetagne/veille-node4/issues"
+  },
+  "homepage": "https://github.com/MathieuSchetagne/veille-node4#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
