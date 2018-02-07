@@ -58,7 +58,7 @@ app.get("/membres", (req,res) => {
        
        let html = "<html>";
        html += "<head>";
-       html += "<style> td{border : 1px solid black;}";
+       html += "<style> td{border : 1px solid black;} table{text-align: center;} body{display: flex;text-align: center;flex-direction: column;align-items: center;}";
        html += "</style>";
        html += "</head>";
        html += "<table>";
